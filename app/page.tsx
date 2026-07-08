@@ -386,7 +386,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-black font-sans">
+    <div className="min-h-screen bg-zinc-50 dark:bg-black font-sans max-h-fit">
       <div className="max-w-6xl mx-auto px-4 py-6">
         {/* Header */}
         <div className="text-center mb-6 mx-auto">
