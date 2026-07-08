@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Cebu Pacific Flight Status",
   description: "Real-time flight status checker for Cebu Pacific flights",
   icons: {
-    icon: "/ceb_logo.ico", 
+    icon: "/favicon-cebpac.ico", 
   },
 };
 
