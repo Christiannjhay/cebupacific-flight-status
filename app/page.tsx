@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Link from 'next/link';
 
 // Define types
 interface FlightData {
@@ -389,15 +390,8 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 dark:bg-black font-sans max-h-fit">
       <div className="max-w-6xl mx-auto px-4 py-6">
         {/* Header */}
-        <div className="text-center mb-6 mx-auto">
-          <Image 
-            src="/ceb_logo.webp" 
-            alt="Cebu Pacific Logo" 
-            width={200}
-            height={200}
-            className="h-10 w-auto mx-auto"
-            priority
-          />
+        <div className="text-center font-bold text-2xl mb-6 mx-auto">
+          Flight Status
         </div>
 
         {/* Departure Selection with Refresh Button */}
@@ -581,6 +575,42 @@ export default function Home() {
           </div>
         )}
       </div>
+      <footer className="border-t mt-12 py-6 text-center text-xs text-gray-500 px-4 space-y-2">
+        <p>
+          <strong>Disclaimer:</strong> This is an unofficial, fan-made project and is
+          not affiliated with, endorsed by, or sponsored by Cebu Pacific. Flight
+          information is retrieved from the publicly accessible{" "}
+          <Link
+            href="https://flightlocator.cebupacificair.com/flightlocator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-gray-700"
+          >
+            Cebu Pacific Flight Locator
+          </Link>{" "}
+          and is provided for informational purposes only. Accuracy and availability
+          are not guaranteed.
+        </p>
+
+        <p>
+          Flight data © Cebu Pacific. All trademarks, logos, and related intellectual
+          property belong to their respective owners.
+        </p>
+
+        <p>
+          Airplane Flight Icon by{" "}
+          <Link
+            href="https://icon-icons.com/authors/726-graphberry"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-gray-700"
+          >
+            GraphBerry
+          </Link>{" "}
+          — licensed under CC BY 4.0.
+        </p>
+      </footer>
     </div>
+    
   );
 }

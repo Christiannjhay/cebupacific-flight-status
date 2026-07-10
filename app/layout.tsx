@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cebu Pacific Flight Status",
+  title: "Flight Status",
   description: "Real-time flight status checker for Cebu Pacific flights",
   icons: {
-    icon: "/favicon-cebpac.ico", 
+    icon: "/plane.ico", 
   },
 };
 
